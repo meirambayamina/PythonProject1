@@ -7,6 +7,9 @@ print_1_to_n(5)
 
 print("\n")
 
+# time complexity: O(n)
+# space complexity: O(n)
+
 #Task 2. Print numbers from n to 1
 
 def print_n_to_1(n):
@@ -15,6 +18,9 @@ def print_n_to_1(n):
     print_n_to_1(n - 1)
 print_n_to_1(5)
 
+# time complexity: O(n)
+# space complexity: O(n)
+
 #Task 3. Find the sum of the first n natural numbers
 
 def sum_natural(n):
@@ -22,12 +28,18 @@ def sum_natural(n):
     return n + sum_natural(n - 1)
 print(sum_natural(5))
 
+# time complexity: O(n)
+# space complexity: O(n)
+
 # Task 4. Find the factorial of a number
 
 def factorial(n):
     if n == 0 or n == 1: return 1
     return n * factorial(n - 1)
 print(factorial(5))
+
+# time complexity: O(n)
+# space complexity: O(n)
 
 # Task 5. Compute a power of a number
 
@@ -37,6 +49,9 @@ def power(a, b):
 
 print(power(2, 4))
 
+# time complexity: O(b)
+# space complexity: O(b)
+
 # Task 6. Find the sum of digits
 
 def sum_digits(n):
@@ -45,6 +60,9 @@ def sum_digits(n):
 
 print(sum_digits(572))
 
+# time complexity: O(log10n)
+# space complexity: O(log10n)
+
 # Task 7. Count the number of digits
 
 def count_digits(n):
@@ -52,6 +70,9 @@ def count_digits(n):
     return 1 + count_digits(n // 10)
 
 print(count_digits(5729))
+
+# time complexity: O(log10n)
+# space complexity: O(log10n)
 
 # Task 8. Reverse a number
 
